@@ -1,1 +1,1 @@
-web: gunicorn siders.sytadin --log-file -
+web: gunicorn spiders.sytadin --log-file -
