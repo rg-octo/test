@@ -1,1 +1,1 @@
-web: gunicorn spiders.sytadin --log-file -
+web: scrapyd
