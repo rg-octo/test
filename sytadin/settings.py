@@ -24,6 +24,9 @@ ROBOTSTXT_OBEY = False
 #REDIS_URL
 REDIS_URL = 'redis-14018.c10.us-east-1-3.ec2.cloud.redislabs.com:14018'
 
+ITEM_PIPELINES = {
+    'scrapy_redis.pipelines.RedisPipeline': 999,
+}
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -92,3 +95,4 @@ REDIS_URL = 'redis-14018.c10.us-east-1-3.ec2.cloud.redislabs.com:14018'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 FEED_EXPORT_FIELDS = ['date_heure','axe','parcours','temps','temps_ref','dist','pourcent',]
+FEED_URI =  ftp://bonnetde:bdjvb1MD@ftp.cluster006.ovh.net/database_sytadin/www/%(time)s.csv
