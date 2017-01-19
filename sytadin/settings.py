@@ -95,4 +95,5 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 FEED_EXPORT_FIELDS = ['date_heure','axe','parcours','temps','temps_ref','dist','pourcent',]
-FEED_URI =  ftp://bonnetde:bdjvb1MD@ftp.cluster006.ovh.net/database_sytadin/www/%(time)s.csv
+FEED_URI =  'ftp://bonnetde:bdjvb1MD@ftp.cluster006.ovh.net/database_sytadin/www/%(time)s.csv'
+FEED_FORMAT = 'csv'
