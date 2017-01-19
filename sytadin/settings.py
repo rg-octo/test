@@ -22,11 +22,11 @@ NEWSPIDER_MODULE = 'sytadin.spiders'
 ROBOTSTXT_OBEY = False
 
 #REDIS_URL
-REDIS_URL = 'redis-14018.c10.us-east-1-3.ec2.cloud.redislabs.com:14018'
+#REDIS_URL = 'redis-14018.c10.us-east-1-3.ec2.cloud.redislabs.com:14018'
 
-ITEM_PIPELINES = {
-    'scrapy_redis.pipelines.RedisPipeline': 999,
-}
+#ITEM_PIPELINES = {
+#    'scrapy_redis.pipelines.RedisPipeline': 999,
+#}
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
